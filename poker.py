@@ -27,7 +27,7 @@ class Player: #создаем класс игроков
           self.nomer=nomer
           self.karta1=karta1
           self.karta2=karta2
-  def otobrpla(nomer): #Метод отображающий игроков
+def otobrpla(nomer): #Метод отображающий игроков
           print ('Номер игрока:',nomer)
           print ('Его карты:')
           otobr(players[nomer].karta1),otobr(players[nomer].karta2)
@@ -55,7 +55,7 @@ gen()
 random.shuffle(deck) # Мешаем колоду
 for i in range (x): #Проходимся по всем игрокам 
   datkart (i)#даем карту первому игроку
-  Player.otobrpla(i)
+  otobrpla(i)
 print ('Сейчас появится флоп')
 time.sleep(3) #Небольшая задержка, чтобы крупье успел раздать карты
 genstol (3)
